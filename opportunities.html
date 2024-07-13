@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opportunities - Soul Legions</title>
-    <link rel="icon" type="image" href="images/SL.jpg">
+    <link rel="icon" type="image" href="../assets/Logos/SL.jpg">
     <style>
         body {
             background-color: #000000;
@@ -15,9 +15,9 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            text-align: center;
         }
         .container {
-            text-align: center;
             padding: 20px;
             max-width: 600px;
             width: 100%;
@@ -38,15 +38,25 @@
         ul {
             list-style-type: none;
             padding: 0;
-            text-align: left;
+            text-align: center;
         }
         li {
             font-size: 1.5em;
             margin-bottom: 10px;
-            transition: transform 0.2s; /* Smooth transition */
+            transition: color 0.3s;
         }
         li:hover {
-            transform: scale(1.1); /* Slightly larger on hover */
+            animation: rainbow 10s infinite; /* Rainbow effect */
+        }
+        @keyframes rainbow {
+            0% { color: #ff0000; }
+            14% { color: #ff7f00; }
+            28% { color: #ffff00; }
+            42% { color: #00ff00; }
+            57% { color: #00ffff; }
+            71% { color: #0000ff; }
+            85% { color: #4b0082; }
+            100% { color: #ff0000; } /* Loop back to red */
         }
         .navbar {
             background-color: #000000;
@@ -86,7 +96,7 @@
         <a href="creators.html">Creators</a>
     </div>
     <div class="container">
-        <img src="images/SL.jpg" alt="Soul Legions Logo" class="logo">
+        <img src="../assets/Logos/SL.jpg" alt="Soul Legions Logo" class="logo">
         <h2>This Team is Full of Opportunities!</h2>
         <h3>We are looking for the following:</h3>
         <ul>
