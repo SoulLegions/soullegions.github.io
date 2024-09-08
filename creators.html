@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creators - Soul Legions</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding-top: 60px; /* Adjust padding to account for fixed navbar */
+        }
+        .navbar {
+            background-color: #000000;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .navbar a:hover {
+            background-color: #333;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .creators-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .creator-member {
+            position: relative;
+            width: 200px;
+            text-align: center;
+        }
+        .creator-member img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .creator-member h2 {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.6); /* Slight transparent background */
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            color: #ffffff; /* Ensure text is white */
+            margin: 0;
+        }
+        .creator-member a {
+            text-decoration: none;
+            color: inherit; /* Inherit color from parent */
+        }
+        .creator-member a:hover h2 {
+            color: #ff9900; /* Change color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="opportunities.html">Opportunities</a>
+        <a href="staff.html">Staff</a>
+        <a href="creators.html">Creators</a>
+        <a href="about.html">About</a>
+    </div>
+    <div class="container">
+        <h1>Our Creators</h1>
+        <div class="creators-grid">
+            <div class="creator-member">
+                <a href="./CreatorPages/OhSuper.html"><img src="./assets/ContentCreators/ohsuper.png" alt="ohSuper"></a>
+                <h2><a href="./CreatorPages/OhSuper.html" class="creator-name">ohSuper</a></h2>
+            </div>
+            <!-- Add more creators as needed -->
+        </div>
+    </div>
+</body>
+</html>
